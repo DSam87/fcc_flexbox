@@ -5,6 +5,22 @@
 }
 
 /* *********************************************** */
+/* Animations */
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+/* *********************************************** */
 /* Nav */
 
 
@@ -21,30 +37,109 @@ li{
 }
 
 ul li a{
+    color: black;
     text-decoration: none;
     display: block;
     padding: 15px 20px;
 }
+ul li a:hover{
+    background-color: rgb(197, 241, 255);
+}
+
+
 
 
 /* *********************************************** */
-/* Nav */
+/* Main */
+
+
 
 main{
     height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: steelblue ;
 }
 
+
 h1{
+    letter-spacing: .5em;
 }
 
 .welcome{
-    flex-basis: 500px;
+    flex-basis: 900px;
     align-self: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
+
+
+/* *********************************************** */
+/* Flex Cards */
+
+h2{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+
+}
+
+.flex-container-row section{
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    padding: 20px 50px;
+    height: 300px;
+    flex-basis: 400px;
+    align-items: center;
+
+    border-radius: 20px;;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 15px black ;
+
+
+}
+
+.flex-container-row section:hover{
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.tab{
+    margin-left: 20px;
+}
+
+
+
+.section1, .section2{
+    
+    width: 90%;
+    margin: auto;
+}
+
+
+.content{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(to bottom, steelblue, black);
+}
+
+
+.white-text{
+    color: white;
+
+}
 

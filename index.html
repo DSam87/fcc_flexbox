@@ -12,7 +12,7 @@
 
                 <ul class="nav-ul">
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="">FreeCodeCamp</a></li>
                     <li><a href="">GitHub</a></li>
                 </ul>
                 <ul >
@@ -25,7 +25,7 @@
         </header>
         <main>
             <div class="welcome">
-                <h1>FlexBox Examples!</h1>
+                <h1 class="white-text">FlexBox Overview!</h1>
                 <p>Going Over Flexbox Containers And Flexbox Items</p>
             </div>
 
@@ -33,15 +33,17 @@
         </main>
 
 
-        <section>
-            <h2>Flex Container & It's Properties</h2>
+        <div class="content">
+
+        <secdtion class="section1">
+            <h2 class="white-text">Flex Container & It's Properties</h2>
 
             <div class="flex-container-row">
 
                 <section>
                     <article>
                         <h3>display: flex</h3>
-                        <p>This element is placed on a container allowing us to use other flex properties and creates flex items.</p>
+                        <p class="tab">This element is placed on a container allowing us to use other flex properties and creates flex items.</p>
 
                     </article>
                 </section>
@@ -49,10 +51,10 @@
                 <section>
                     <article>
                         <h3>flex-direction</h3>
-                        <p>flex-direction property on the flex container to choose the main axis direction</p>
+                        <p class="tab">flex-direction property on the flex container to choose the main axis direction</p>
 
                         <h4>flex-direction Values</h4>
-                        <ul>
+                        <ul class="tab">
                             <li>column</li>
                             <li>row</li>
                             <li>column-reverse</li>
@@ -63,12 +65,12 @@
 
                 <section>
                     <article>
-                        <h3>justify-content</h3>
-                        <p>The Items within a flex container can be told how to align & space out items in a certain way.</p>
-                        <p>This does thin along the main axis.</p>
+                        <h3 >justify-content</h3>
+                        <p class="tab">The Items within a flex container can be told how to align & space out items in a certain way.</p>
+                        <p class="tab">This does thin along the main axis.</p>
 
                         <h4>justify-content Values</h4>
-                        <ul>
+                        <ul class="tab">
                             <li>column</li>
                             <li>row</li>
                             <li>column-reverse</li>
@@ -79,16 +81,32 @@
 
                 <section>
                     <article>
-                        <h3>align-elements</h3>
-                        <p>The Items within a flex container can be told how to align & space out items in a certain way.</p>
-                        <p>This does thin along the main axis.</p>
+                        <h3>align-items</h3>
+                        <p class="tab">For the cross axis (which is the opposite of the main axis).</p>
+                        <p class="tab">To align flex items along the cross axis.</p>
 
                         <h4>align-elements Values</h4>
-                        <ul>
-                            <li>column</li>
-                            <li>row</li>
-                            <li>column-reverse</li>
-                            <li>row-reverse</li>
+                        <ul class="tab">
+                            <li>flex-start </li>
+                            <li>flex-end </li>
+                            <li>center</li>
+                            <li>stretch</li>
+                            <li>baseline</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <h3>flex-wrap</h3>
+                        <p class="tab">Property tells CSS to wrap items.</p>
+                        <p class="tab">This does thin along the main axis.</p>
+
+                        <h4>align-elements Values</h4>
+                        <ul class="tab">
+                            <li>nowrap</li>
+                            <li>wrap</li>
+                            <li>wrap-reverse</li>
                         </ul>
                     </article>
                 </section>
@@ -99,6 +117,78 @@
 
         </section>
 
+
+        <section class="section2">
+            <h2 class="white-text">Flex Items & It's Properties</h2>
+
+            <div class="flex-container-row">
+
+                <section>
+                    <article>
+                        <h3>flex-shrink</h3><br>
+                        <p class="tab">It controls the size of the items specificly when the container shrinks.</p> <br>
+                        <p class="tab">flex-shrink property takes a number as values, the height the number the more it shrinks compared to the other items in the container.</p>
+
+
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <h3>flex-grow</h3>
+                        <p class="tab">flex-grow property controls the size of items when the parent container expands.</p>
+
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <h3 >flex-basis</h3><br>
+                        <p class="tab">flex-basis property specifies the intial size of the item before CSS makes adjustments with flex-shirnk or flex-grow.</p><br>
+                        <p class="tab">flex-basis can use many units the same as other size proeprties (px,em,%)</p>
+
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <h3>flex Shorthand</h3>
+                        <p class="tab">flex-grow, flex-shrink, and flex-basis properties can all be set together by using the flex property.</p>
+
+                    </article>
+                </section>
+
+
+                <section>
+                    <article>
+                        <h3>order</h3>
+                        <p class="tab">The order property is used to tell CS the order of how flex items apear in the flex container.</p>
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <h3>align-self</h3>
+                        <p class="tab">Allows us to adjust each item's alignment individually,instead of setting them all at onece. (with align-items)</p>
+
+                        <h4>align-self Values</h4>
+                        <ul class="tab">
+                            <li>flex-start </li>
+                            <li>flex-end </li>
+                            <li>center</li>
+                            <li>stretch</li>
+                            <li>baseline</li>
+                        </ul>
+                    </article>
+                </section>
+
+            </div>
+
+
+
+        </section>
+    </div>
+    
         <footer>
 
 
